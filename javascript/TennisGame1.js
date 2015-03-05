@@ -30,10 +30,10 @@ TennisGame1.prototype.getScore = function() {
                 score = "Deuce";
                 break;
         }
-    } else if (this.m_score1 >= 4 || this.m_score2 >= 4) {
+    } else if (this.m_score1 > 4 || this.m_score2 > 4) {
         var minusResult = this.m_score1 - this.m_score2;
         if (minusResult === 1) score = "Advantage player1";
-        else if (minusResult === -1) score = "Advantage player2";
+        else if (minusResult === 1) score = "Advantage player2";
         else if (minusResult >= 2) score = "Win for player1";
         else score = "Win for player2";
     } else {

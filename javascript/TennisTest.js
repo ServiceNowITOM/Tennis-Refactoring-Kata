@@ -1,12 +1,12 @@
 if (typeof TennisGame1 === "undefined") {
     var TennisGame1 = require("./TennisGame1.js");
 }
-if (typeof TennisGame2 === "undefined") {
-    var TennisGame2 = require("./TennisGame2.js");
-}
-if (typeof TennisGame3 === "undefined") {
-    var TennisGame3 = require("./TennisGame3.js");
-}
+// if (typeof TennisGame2 === "undefined") {
+//     var TennisGame2 = require("./TennisGame2.js");
+// }
+// if (typeof TennisGame3 === "undefined") {
+//     var TennisGame3 = require("./TennisGame3.js");
+// }
 
 var allScores = [
     [0, 0, "Love-All"],
@@ -145,6 +145,6 @@ if (typeof window !== "undefined") {
 }
 
 runSuiteOnGame(reporter, TennisGame1, "TennisGame1");
-runSuiteOnGame(reporter, TennisGame2, "TennisGame2");
-runSuiteOnGame(reporter, TennisGame3, "TennisGame3");
+// runSuiteOnGame(reporter, TennisGame2, "TennisGame2");
+// runSuiteOnGame(reporter, TennisGame3, "TennisGame3");
 reporter.done();
